@@ -1,6 +1,5 @@
 #root {
-  width: 100vw;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-align: center;
 }
 
@@ -12,7 +11,7 @@
 }
 
 .header {
-  height: 300px;
+  height: 18vw;
   background-color: #23242c;
   width: 100%;
   color: white;
@@ -29,18 +28,25 @@
 }
 
 .title {
-  font-size: 40px;
-  margin-top: 50px;
+  font-size: 2vw;
+  font-weight: 800;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   font-weight: 600;
 }
 
 .moviePlace {
-  margin: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw;
+  padding-left: 13vw;
+  padding-right: 13vw;
 }
 
 .aboutUs {
   width: 100%;
-  height: 300px;
+
   color: white;
   background-color: #23242c;
   font-size: 20px;
@@ -48,4 +54,97 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2vw;
+}
+
+.aboutUsDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUsImage {
+  width: 12vw;
+  margin-bottom: 1vw;
+}
+
+.bottomDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.aboutUsTitle {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+
+.aboutUsName {
+  margin-bottom: 2vw;
+}
+
+.sinopsisDetail {
+  width: 32vw;
+  height: 15.5vw;
+  word-wrap: break-word;
+  background-color: #23242c;
+  color: white;
+  padding: 1vw;
+  text-align: left;
+  border-radius: 10px;
+  font-size: 0.8vw;
+}
+
+.clickMovie {
+  font-size: 1vw;
+  margin: 0 auto;
+  margin-bottom: 1vw;
+  cursor: pointer;
+  font-weight: 600;
+  width: 20vw;
+  background-color: #050e27;
+  height: 2.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movieOuter {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3vw;
+}
+
+.movieDiv {
+  background-color: #23242c;
+  padding: 2vw;
+  border-radius: 20px;
+  padding-top: 1vw;
+  padding-bottom: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeDiv {
+  font-size: 1vw;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  width: 100%;
 }
