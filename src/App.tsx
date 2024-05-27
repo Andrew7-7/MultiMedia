@@ -53,7 +53,16 @@ function App() {
         </div>
         <div className="trailerDiv">
           <p className="title">Sinopsis</p>
-          <div className="sinopsisDetail">Sinopsis Detail</div>
+          <div className="sinopsisDetail">
+            di suatu kampus swasta di Indonesia terdapat satu mahasiswa yang
+            kecanduan judi online. Teman-temannya mulai curiga dengan mahasiswa
+            ini dari perubahan sikap dia dan perubahan cara ia mengeluarkan
+            uang. Karena awalnya ia selalu menang, ia makin berani dan berani
+            untuk mendeposit lebih banyak uang. Namun, isuatu hari ia kalah dan
+            kehilangan semua uangnnya. Ia berusaha memninjam uang ke temannya
+            dan tidak berhasil. Lalu ia memilih untuk meminjam uang melalui
+            pinjaman online untuk bermain judi online lagi.
+          </div>
         </div>
       </div>
 

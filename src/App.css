@@ -92,9 +92,9 @@
   background-color: #23242c;
   color: white;
   padding: 1vw;
-  text-align: left;
+  text-align: justify;
   border-radius: 10px;
-  font-size: 0.8vw;
+  font-size: 1vw;
 }
 
 .clickMovie {
