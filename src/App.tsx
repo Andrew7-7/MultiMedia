@@ -1,14 +1,28 @@
 import { useState } from "react";
 import "./App.css";
-import profileImage from "./assets/profile-icon-design-free-vector.jpg";
 import trailerVideo from "./assets/Final_Trailer.mp4";
+import andrew from "./assets/andrew.jpg";
+import alvrian from "./assets/alvrian.jpg";
+import eugene from "./assets/eugene.jpg";
+import chris from "./assets/chris.jpg";
+import arya from "./assets/arya.jpg";
+import pierre from "./assets/pierre.jpg";
 function App() {
   const [showMovie, setShowMovie] = useState(false);
-  const AboutUsCard = ({ name, image }: { name: string; image: string }) => {
+  const AboutUsCard = ({
+    name,
+    image,
+    role,
+  }: {
+    name: string;
+    image: string;
+    role: string;
+  }) => {
     return (
       <div className="aboutUsDiv">
         <img className="aboutUsImage" src={image} />
         <p className="aboutUsName">{name}</p>
+        <p className="roleName">{role}</p>
       </div>
     );
   };
@@ -26,13 +40,15 @@ function App() {
               </p>
             </div>
             <p>Movie</p>
-            <video width="600" controls>
-              {/* <source
-            src={`${process.env.PUBLIC_URL}/sample.mp4`}
-            type="video/mp4"
-          /> */}
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/nm2m7FiUxto"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       ) : null}
@@ -44,7 +60,7 @@ function App() {
       <div className="moviePlace">
         <div className="trailerDiv">
           <p className="title">PINJ*L Trailer</p>
-          <video width="600" controls>
+          <video className="video" controls>
             <source src={trailerVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -76,17 +92,30 @@ function App() {
       <div className="aboutUs">
         <p className="aboutUsTitle">About Us</p>
         <div className="bottomDiv">
-          <AboutUsCard name={"Andrew"} image={profileImage} />
+          <AboutUsCard name={"Andrew"} image={andrew} role="Website" />
           <AboutUsCard
             name={"Eugene Emmanuelle Hervine"}
-            image={profileImage}
+            image={eugene}
+            role="Actor"
           />
-          <AboutUsCard name={"Arya Yudhistira Ramadhan"} image={profileImage} />
+          <AboutUsCard
+            name={"Arya Yudhistira Ramadhan"}
+            image={arya}
+            role="Editor"
+          />
         </div>
         <div className="bottomDiv">
-          <AboutUsCard name={"Pierre Sitorus"} image={profileImage} />
-          <AboutUsCard name={"Alvrian Timothius"} image={profileImage} />
-          <AboutUsCard name={"Christopher Jovison"} image={profileImage} />
+          <AboutUsCard name={"Pierre Sitorus"} image={pierre} role="Script" />
+          <AboutUsCard
+            name={"Alvrian Timothius"}
+            image={alvrian}
+            role="Script"
+          />
+          <AboutUsCard
+            name={"Christopher Jovison"}
+            image={chris}
+            role="Actor"
+          />
         </div>
       </div>
     </>

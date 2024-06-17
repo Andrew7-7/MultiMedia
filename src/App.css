@@ -81,8 +81,13 @@
   margin-bottom: 1vw;
 }
 
-.aboutUsName {
+.roleName {
   margin-bottom: 2vw;
+}
+
+.aboutUsName {
+  font-weight: 600;
+  margin-bottom: 0.5vw;
 }
 
 .sinopsisDetail {
@@ -95,6 +100,10 @@
   text-align: justify;
   border-radius: 10px;
   font-size: 1vw;
+}
+
+.video {
+  width: 28vw;
 }
 
 .clickMovie {
