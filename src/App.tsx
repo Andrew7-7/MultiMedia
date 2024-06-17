@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import profileImage from "./assets/profile-icon-design-free-vector.jpg";
+import trailerVideo from "./assets/Final_Trailer.mp4";
 function App() {
   const [showMovie, setShowMovie] = useState(false);
   const AboutUsCard = ({ name, image }: { name: string; image: string }) => {
@@ -44,10 +45,7 @@ function App() {
         <div className="trailerDiv">
           <p className="title">PINJ*L Trailer</p>
           <video width="600" controls>
-            {/* <source
-            src={`${process.env.PUBLIC_URL}/sample.mp4`}
-            type="video/mp4"
-          /> */}
+            <source src={trailerVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
